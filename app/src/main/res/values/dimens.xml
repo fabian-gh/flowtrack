@@ -6,4 +6,7 @@
     <dimen name="text_padding">5dp</dimen>
     <dimen name="text_padding_top">10dp</dimen>
     <dimen name="card_height">300dp</dimen>
+    <dimen name="spacer">15dp</dimen>
+    <dimen name="standard_elevation">5dp</dimen>
+    <dimen name="add_button_margin">30dp</dimen>
 </resources>

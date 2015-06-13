@@ -2,4 +2,11 @@
     <string name="app_name">FlowTrack</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_add">Add new Track</string>
+
+    <string name="add_hint_title">Title</string>
+    <string name="add_hint_description">Description</string>
+    <string name="add_hint_note">Notes</string>
+    <string name="add_hint_date">Date</string>
+    <string name="add_hint_add">Add</string>
 </resources>

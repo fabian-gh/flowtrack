@@ -1,0 +1,5 @@
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_description_black_48dp"
+    android:scaleGravity="center_vertical|center_horizontal"
+    android:scaleHeight="80%"
+    android:scaleWidth="80%" />

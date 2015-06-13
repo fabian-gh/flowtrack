@@ -10,4 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_track"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/add_button_margin"
+        android:layout_marginBottom="@dimen/add_button_margin"
+        android:src="@drawable/drawable_add_button"
+        android:layout_alignParentStart="false"
+        android:clickable="true"
+        android:baselineAlignBottom="false"
+        android:background="@null"
+        android:contentDescription="@string/add_hint_add"
+        android:focusable="false"
+        android:cropToPadding="false"
+        android:focusableInTouchMode="false"
+        android:tint="@color/primary" />
+
 </RelativeLayout>
