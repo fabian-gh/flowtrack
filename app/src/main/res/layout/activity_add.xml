@@ -23,36 +23,99 @@
         android:layout_below="@+id/add_title"
         android:layout_alignParentStart="true"
         android:id="@+id/linear_layout"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_marginTop="@dimen/spacer">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.03"
-            android:id="@+id/horizontal_layout">
+            android:id="@+id/row_description">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:id="@+id/drawable_description"
-                android:src="@drawable/drawable_description"
-                android:layout_gravity="center" />
+                android:src="@drawable/ic_description_black_48dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/add_hint_description" />
 
             <Space
                 android:layout_width="@dimen/spacer"
-                android:layout_height="match_parent"
-                android:id="@+id/spacer_description" />
+                android:layout_height="match_parent" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/add_descrption"
+                android:id="@+id/add_description"
                 android:layout_weight="1"
                 android:layout_gravity="center"
-                android:layout_marginRight="@dimen/text_padding"
+                android:layout_marginRight="@dimen/add_textfield_margin_right"
                 android:hint="@string/add_hint_description" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_note"
+            android:layout_marginTop="@dimen/spacer">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/drawable_note"
+                android:src="@drawable/ic_note_add_black_48dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/add_hint_note"
+                android:clickable="false" />
+
+            <Space
+                android:layout_width="@dimen/spacer"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_note"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/add_textfield_margin_right"
+                android:hint="@string/add_hint_note"
+                android:inputType="textImeMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row_date"
+            android:layout_marginTop="@dimen/spacer">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/drawable_event"
+                android:src="@drawable/ic_event_black_48dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/add_hint_date"
+                android:clickable="false" />
+
+            <Space
+                android:layout_width="@dimen/spacer"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_date"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/add_textfield_margin_right"
+                android:hint="@string/add_hint_note"
+                android:inputType="datetime" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </RelativeLayout>
